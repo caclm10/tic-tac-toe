@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tic Tac Toe</title>
+    </head>
+
+    <body class="min-h-screen">
+        <div class="container max-w-lg py-12">
+            <div class="card">
+                <div class="card__header text-center">
+                    <h1 class="card__title text-3xl">Tic Tac Toe</h1>
+                    <p id="status" class="card__description pt-3 text-xl">
+                        Currently playing: X
+                    </p>
+                </div>
+                <div class="card__content">
+                    <p class="text-center hidden" id="winner"></p>
+
+                    <div id="board" class="grid grid-cols-3 gap-4">
+                        <button
+                            class="bg-box aspect-square flex items-center justify-center rounded-lg transition ease-linear group hover:scale-105"
+                            data-cell-index="0"
+                        >
+                            <span
+                                class="text-5xl md:text-7xl group-data-[player=X]:text-primary group-data-[player=O]:text-destructive"
+                            ></span>
+                        </button>
+                        <button
+                            class="bg-box aspect-square flex items-center justify-center rounded-lg transition ease-linear group hover:scale-105"
+                            data-cell-index="1"
+                        >
+                            <span
+                                class="text-5xl md:text-7xl group-data-[player=X]:text-primary group-data-[player=O]:text-destructive"
+                            ></span>
+                        </button>
+                        <button
+                            class="bg-box aspect-square flex items-center justify-center rounded-lg transition ease-linear group hover:scale-105"
+                            data-cell-index="2"
+                        >
+                            <span
+                                class="text-5xl md:text-7xl group-data-[player=X]:text-primary group-data-[player=O]:text-destructive"
+                            ></span>
+                        </button>
+                        <button
+                            class="bg-box aspect-square flex items-center justify-center rounded-lg transition ease-linear group hover:scale-105"
+                            data-cell-index="3"
+                        >
+                            <span
+                                class="text-5xl md:text-7xl group-data-[player=X]:text-primary group-data-[player=O]:text-destructive"
+                            ></span>
+                        </button>
+                        <button
+                            class="bg-box aspect-square flex items-center justify-center rounded-lg transition ease-linear group hover:scale-105"
+                            data-cell-index="4"
+                        >
+                            <span
+                                class="text-5xl md:text-7xl group-data-[player=X]:text-primary group-data-[player=O]:text-destructive"
+                            ></span>
+                        </button>
+                        <button
+                            class="bg-box aspect-square flex items-center justify-center rounded-lg transition ease-linear group hover:scale-105"
+                            data-cell-index="5"
+                        >
+                            <span
+                                class="text-5xl md:text-7xl group-data-[player=X]:text-primary group-data-[player=O]:text-destructive"
+                            ></span>
+                        </button>
+                        <button
+                            class="bg-box aspect-square flex items-center justify-center rounded-lg transition ease-linear group hover:scale-105"
+                            data-cell-index="6"
+                        >
+                            <span
+                                class="text-5xl md:text-7xl group-data-[player=X]:text-primary group-data-[player=O]:text-destructive"
+                            ></span>
+                        </button>
+                        <button
+                            class="bg-box aspect-square flex items-center justify-center rounded-lg transition ease-linear group hover:scale-105"
+                            data-cell-index="7"
+                        >
+                            <span
+                                class="text-5xl md:text-7xl group-data-[player=X]:text-primary group-data-[player=O]:text-destructive"
+                            ></span>
+                        </button>
+                        <button
+                            class="bg-box aspect-square flex items-center justify-center rounded-lg transition ease-linear group hover:scale-105"
+                            data-cell-index="8"
+                        >
+                            <span
+                                class="text-5xl md:text-7xl group-data-[player=X]:text-primary group-data-[player=O]:text-destructive"
+                            ></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card__footer justify-center">
+                    <button type="button" id="restartButton" class="btn">
+                        Restart Game
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>
